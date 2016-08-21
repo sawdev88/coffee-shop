@@ -51,6 +51,7 @@ body {
 
 #menu {
   padding: 48px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .menu-list {
@@ -58,4 +59,37 @@ body {
   padding: 24px 80px;
   display: inline-block;
   background: url('../img/symphony.png');
+}
+
+#about {
+  padding: 48px 0;
+}
+
+.coffee-cup img {
+  border: 3px solid #000;
+  border-radius: 50%;
+  padding: 40px;
+  background: url('../img/paisley.png');
+}
+
+.about-text {
+  font-size: 1.4em;
+}
+
+.icons span {
+  margin: 64px 0 32px 0;
+  font-size: 4em;
+  opacity: .7;
+}
+
+.heart {
+  color: #c74d4d;
+}
+
+.tree {
+  color: #379612;
+}
+
+.pig {
+  color: #d69aa0;
 }
