@@ -1,0 +1,40 @@
+body {
+  height: 100%;
+  text-align: center;
+}
+
+
+.main-nav {
+  border-bottom: 1px solid #000;
+}
+
+.main-nav ul {
+  list-style: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  padding: 8px 32px;
+}
+
+.header {
+  background: url('../img/shop.jpg') no-repeat top center fixed;
+  color: #fff;
+  height: 640px;
+  padding-top: 200px;
+}
+
+.hero {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 24px 80px;
+}
+
+.hero h1,
+.hero h4 {
+  margin: 0;
+}
+
+.hero hr {
+  width: 30%;
+}
