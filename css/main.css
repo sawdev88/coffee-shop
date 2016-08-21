@@ -11,6 +11,7 @@ body {
   background: #fff;
   border-bottom: 1px solid #000;
   transition: 0.1s ease-in-out;
+  z-index: 1001;
 }
 
 .nav-scroll-up {
@@ -66,9 +67,9 @@ body {
 }
 
 .coffee-cup img {
-  border: 3px solid #000;
   border-radius: 50%;
   padding: 40px;
+  margin-top: 48px;
   background: url('../img/paisley.png');
 }
 
@@ -76,8 +77,18 @@ body {
   font-size: 1.4em;
 }
 
+.about-text h2 {
+  text-decoration: underline;
+}
+
+.icons {
+  margin: 48px 0;
+  padding: 32px 0;
+  background: rgba(222, 222, 222, 0.2);
+}
+
 .icons span {
-  margin: 64px 0 32px 0;
+  padding-bottom: 16px;
   font-size: 4em;
   opacity: .7;
 }
@@ -92,4 +103,35 @@ body {
 
 .pig {
   color: #d69aa0;
+}
+
+#contact {
+  margin: 48px 0;
+}
+
+#contact h2 {
+  text-decoration: underline;
+}
+
+#contact figure {
+  padding: 32px 0 8px 0;
+}
+
+#contact figure span {
+  font-size: 4em;
+}
+
+#gmap_canvas img{
+  max-width:100% !important;
+  background:none!important
+}
+
+.social-icons {
+  padding: 40px 0;
+}
+
+.social-icons span {
+  display: block;
+  font-size: 2em;
+  padding: 16px 0;
 }
