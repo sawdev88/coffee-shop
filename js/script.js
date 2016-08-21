@@ -2,10 +2,12 @@ $(window).on('scroll', function(event){
   var position = $(this).scrollTop();
 
   // hide brand when scroll down and show when at the top
-  if (position > 15) {
-    $('.main-nav').addClass('nav-scroll-up');
-  } else {
-    $('.main-nav').removeClass('nav-scroll-up');
+  if ($(window).width() > 520) {
+    if (position > 15) {
+      $('.main-nav').addClass('nav-scroll-up');
+    } else {
+      $('.main-nav').removeClass('nav-scroll-up');
+    }
   }
 
   //nav spy
@@ -34,6 +36,7 @@ var removeSelected = function () {
   $('li').removeClass('selected');
 }
 
-var addSelected = function (item) {
-  item.addClass('selected');
-}
+// show nav on mobile
+$('.mobile-show-nav').on('click', function () {
+  $('.main-nav ul').fadeToggle();
+})
