@@ -5,8 +5,10 @@ $(window).on('scroll', function(event){
   if ($(window).width() > 520) {
     if (position > 15) {
       $('.main-nav').addClass('nav-scroll-up');
+      $('.overlay').fadeOut();
     } else {
       $('.main-nav').removeClass('nav-scroll-up');
+      $('.overlay').fadeIn();
     }
   }
 
@@ -15,17 +17,17 @@ $(window).on('scroll', function(event){
     removeSelected();
     $('.home-nav').addClass('selected');
   }
-  if (position > $('#menu').offset().top) {
+  if (position > $('#menu').offset().top - 48) {
     removeSelected();
     $('.menu-nav').addClass('selected');
   }
 
-  if (position > $('#about').offset().top - 100) {
+  if (position > $('#about').offset().top - 44) {
     removeSelected();
     $('.about-nav').addClass('selected');
   }
 
-  if (position > $('#contact').offset().top - 200) {
+  if (position > $('#contact').offset().top - 180) {
     removeSelected();
     $('.contact-nav').addClass('selected');
   }
