@@ -59,13 +59,13 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 #header {
-  background: url('../img/shop.jpg') no-repeat center center;
+  background: url('../img/shop.jpg') no-repeat center -72px;
   color: #fff;
-  height: 640px;
+  height: 660px;
   padding-top: 200px;
   margin-top: 80px;
 }
@@ -88,7 +88,7 @@ img {
 }
 
 #menu {
-  padding: 48px 0;
+  padding: 120px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -100,7 +100,7 @@ img {
 }
 
 #about {
-  padding: 80px 0;
+  padding: 120px 0;
 }
 
 .coffee-cup img {
@@ -128,6 +128,11 @@ img {
   padding-bottom: 16px;
   font-size: 4em;
   opacity: .7;
+}
+
+.scaleUp {
+  transition: .4s ease-in;
+  font-size: 1.4em;
 }
 
 .heart {
@@ -175,10 +180,16 @@ img {
   padding: 40px 0;
 }
 
-.social-icons span {
+.social-icons a {
   display: block;
   font-size: 2em;
-  padding: 16px 0;
+  margin: 16px 0;
+  color: #fff;
+}
+
+.social-icons a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .footer {
@@ -202,11 +213,15 @@ img {
 }
 
 @media (max-width: 480px) {
+  .overlay {
+    display: none;
+  }
   .mobile-collapse {
     display: block;
     position: fixed;
     top: 8px;
     right: 4px;
+    color: rgba(0, 0, 0, 0.5);
   }
   .mobile-collapse span {
     font-size: 1.4em;
@@ -222,5 +237,17 @@ img {
   #header {
     margin-top: -32px;
     background: url('../img/mobile_shop.jpg') no-repeat center center;
+  }
+  .hero {
+    margin-top: 48px;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  #about,
+  #menu {
+    padding: 80px 0;
+  }
+  .footer {
+    text-align: center;
   }
 }

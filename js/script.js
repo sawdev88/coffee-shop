@@ -1,3 +1,11 @@
+var removeSelected = function () {
+  $('li').removeClass('selected');
+}
+
+var hideNav = function () {
+    $('.main-nav ul').fadeOut();
+}
+
 $(window).on('scroll', function(event){
   var position = $(this).scrollTop();
 
@@ -17,6 +25,7 @@ $(window).on('scroll', function(event){
     removeSelected();
     $('.home-nav').addClass('selected');
   }
+
   if (position > $('#menu').offset().top - 48) {
     removeSelected();
     $('.menu-nav').addClass('selected');
@@ -32,13 +41,18 @@ $(window).on('scroll', function(event){
     $('.contact-nav').addClass('selected');
   }
 
+  if (position > $('#about').offset().top + 200) {
+    $('.icons figure').addClass('scaleUp');
+  }
+
 });
 
-var removeSelected = function () {
-  $('li').removeClass('selected');
-}
-
 // show nav on mobile
-$('.mobile-show-nav').on('click', function () {
+$('.mobile-show-nav').on('click', function (e) {
+  e.stopPropagation();
   $('.main-nav ul').fadeToggle();
 })
+
+
+// hide nav when body is clicked
+$('body').on('click', hideNav);
