@@ -13,11 +13,12 @@ $(window).on('scroll', function(event){
   if ($(window).width() > 520) {
     if (position > 15) {
       $('.main-nav').addClass('nav-scroll-up');
-      $('.overlay').fadeOut();
+      $('.overlay').fadeOut(500);
     } else {
       $('.main-nav').removeClass('nav-scroll-up');
-      $('.overlay').fadeIn();
+      $('.overlay').fadeIn(800);
     }
+
   }
 
   //nav spy
@@ -42,7 +43,11 @@ $(window).on('scroll', function(event){
   }
 
   if (position > $('#about').offset().top + 200) {
-    $('.icons figure').addClass('scaleUp');
+    $('.icons figure').addClass('scale-up');
+    $('.icons figure').removeClass('scale-down');
+  } else {
+    $('.icons figure').addClass('scale-down');
+    $('.icons figure').removeClass('scale-up');
   }
 
 });

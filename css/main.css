@@ -63,7 +63,7 @@ img {
 }
 
 #header {
-  background: url('../img/shop.jpg') no-repeat center -72px;
+  background: url('../img/shop.jpg') no-repeat center 16px fixed;
   color: #fff;
   height: 660px;
   padding-top: 200px;
@@ -112,6 +112,7 @@ img {
 
 .about-text {
   font-size: 1.4em;
+  text-align: justify;
 }
 
 .about-text h2 {
@@ -127,12 +128,21 @@ img {
 .icons span {
   padding-bottom: 16px;
   font-size: 4em;
-  opacity: .7;
+  opacity: .6;
 }
 
-.scaleUp {
+.icons figcaption {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.scale-up {
   transition: .4s ease-in;
-  font-size: 1.4em;
+  font-size: 1.3em;
+}
+
+.scale-down {
+  transition: .4s ease-in;
+  font-size: 1em;
 }
 
 .heart {
